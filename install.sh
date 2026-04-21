@@ -1,10 +1,10 @@
 #!/bin/bash
 # install.sh - 一键安装 remove_doubao_hosts 定时清理脚本
-# 用法: curl -fsSL https://raw.sankuai.com/~qiushi02/qshell/master/install.sh | bash
+# 用法: curl -fsSL https://raw.githubusercontent.com/qiushi233/qshell/master/install.sh | bash
 
 set -e
 
-REPO_RAW_BASE="https://raw.sankuai.com/~qiushi02/qshell/master"
+REPO_RAW_BASE="https://raw.githubusercontent.com/qiushi233/qshell/master"
 SCRIPT_NAME="remove_doubao_hosts.sh"
 INSTALL_DIR="$HOME/.local/bin"
 INSTALL_PATH="$INSTALL_DIR/$SCRIPT_NAME"
