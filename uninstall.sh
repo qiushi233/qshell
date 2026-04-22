@@ -39,7 +39,7 @@ fi
 
 # 3. 删除日志文件
 if [ -f "$LOG_FILE" ]; then
-    rm -f "$LOG_FILE"
+    sudo rm -f "$LOG_FILE"
     info "已删除日志: $LOG_FILE"
 else
     warn "日志文件不存在，跳过: $LOG_FILE"
