@@ -6,7 +6,6 @@ set -e
 
 SCRIPT_NAME="remove_doubao_hosts.sh"
 INSTALL_PATH="$HOME/.local/bin/$SCRIPT_NAME"
-LOG_FILE="/tmp/remove_doubao_hosts.log"
 
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -37,13 +36,6 @@ else
     warn "脚本文件不存在，跳过: $INSTALL_PATH"
 fi
 
-# 3. 删除日志文件
-if [ -f "$LOG_FILE" ]; then
-    sudo rm -f "$LOG_FILE"
-    info "已删除日志: $LOG_FILE"
-else
-    warn "日志文件不存在，跳过: $LOG_FILE"
-fi
 
 echo ""
 echo "=== 卸载完成 ==="
